@@ -1,18 +1,12 @@
-<!--TODO 
-Univerzális header és footer kéne, valamint még sok más.
-https://www.youtube.com/watch?v=kaEvqojOczw
-A leírásban ott a kövi link csináld végig és javítsd ki a portfóliós oldalt.
-Egy főmenü is kéne a headerbe, mint itt: https://soumyajit.vercel.app/resume
--->
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <script src="https://cdn.tailwindcss.com"></script>
 
-        <!--A weboldal ikonának beállítása.-->
+        <!-- Weboldal ikonja -->
         <link
             rel="icon"
             type="image/webp"
@@ -22,307 +16,506 @@ Egy főmenü is kéne a headerbe, mint itt: https://soumyajit.vercel.app/resume
         <title>Andrea Freud | Junior Java Backend Developer</title>
     </head>
 
-    <body class="bg-slate-950 text-white">
-        <!-- Animated gradient background -->
+    <body
+        class="bg-slate-950 text-white font-sans antialiased selection:bg-purple-500/30"
+    >
+        <!-- Animált/Elmosott gradiens háttér -->
         <div
-            class="fixed inset-0 -z-10 bg-gradient-to-br from-slate-950 via-purple-950 to-slate-900"
+            class="fixed inset-0 -z-10 bg-gradient-to-br from-slate-950 via-purple-950/40 to-slate-900"
         ></div>
 
-        <div class="relative max-w-6xl mx-auto px-6 py-12">
+        <!-- NAVIGÁCIÓS FŐMENÜ (HEADER) -->
+        <nav
+            class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/70 border-b border-slate-800/60 transition-all duration-300"
+        >
+            <div
+                class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between"
+            >
+                <a
+                    href="#"
+                    class="text-xl font-bold bg-gradient-to-r from-purple-400 to-indigo-400 bg-clip-text text-transparent hover:opacity-80 transition"
+                >
+                    AF.dev
+                </a>
+
+                <!-- Menüpontok -->
+                <div
+                    class="flex items-center gap-6 text-sm font-medium text-gray-300"
+                >
+                    <a href="#" class="hover:text-purple-400 transition"
+                        >Home</a
+                    >
+                    <a href="#projects" class="hover:text-purple-400 transition"
+                        >Projects</a
+                    >
+                    <a
+                        href="#tech-stack"
+                        class="hover:text-purple-400 transition"
+                        >Tech Stack</a
+                    >
+                    <a
+                        href="https://github.com/Nagraggini/Nagraggini/blob/main/Andrea_Freud_CV.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="bg-purple-600/20 hover:bg-purple-600/40 text-purple-300 border border-purple-500/30 px-3 py-1.5 rounded-md transition"
+                    >
+                        Resume
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- FŐ TARTALOM -->
+        <main class="relative max-w-6xl mx-auto px-6 py-16 space-y-24">
             <!-- HERO SECTION -->
-
-            <header class="text-center mb-20">
-                <h1 class="text-5xl font-bold mb-6">
-                    Andrea Freud – Junior Java Backend Developer
+            <header class="text-center max-w-3xl mx-auto space-y-6 pt-8">
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">
+                    Andrea Freud
                 </h1>
-
-                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
-                    I build backend applications using Java and Spring Boot,
-                    focusing on clean architecture and practical
-                    problem-solving.
+                <p
+                    class="font-semibold tracking-wide uppercase text-sm md:text-base"
+                >
+                    Junior Backend Developer • Java • Spring Boot
                 </p>
+                <div
+                    class="space-y-4 text-gray-400 text-lg md:text-xl font-normal leading-relaxed"
+                >
+                    <p>
+                        I build backend applications with a focus on clean
+                        architecture, REST APIs, automated testing, and reliable
+                        data management.
+                    </p>
+                    <p class="text-base text-gray-500">
+                        Focused on backend development, software quality, and
+                        building maintainable applications with modern Java
+                        technologies.
+                    </p>
+                </div>
+                <div class="pt-4">
+                    <a
+                        href="https://github.com/Nagraggini/Nagraggini/blob/main/Andrea_Freud_CV.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center bg-purple-600 hover:bg-purple-500 text-white font-semibold px-6 py-3 rounded-xl shadow-lg shadow-purple-600/20 hover:shadow-purple-500/30 hover:-translate-y-0.5 transition duration-200"
+                    >
+                        View My CV
+                    </a>
+                </div>
             </header>
 
-            <!-- TECH STACK -->
+            <!-- FEATURED PROJECTS SECTION -->
+            <section id="projects" class="scroll-mt-24 space-y-12">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold tracking-tight md:text-4xl">
+                        ⭐ Featured Projects
+                    </h2>
+                    <p class="text-gray-400 mt-2">
+                        A selection of my recent automation and backend
+                        development work
+                    </p>
+                </div>
 
-            <section class="mb-20">
-                <h2 class="text-3xl font-bold mb-8 text-center">Tech Stack</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Sauce Demo Automation -->
+                    <div
+                        class="bg-slate-900/60 backdrop-blur-sm border border-slate-800 p-6 rounded-2xl flex flex-col justify-between hover:border-purple-500/40 transition group"
+                    >
+                        <div>
+                            <div class="flex justify-between items-start mb-3">
+                                <h3
+                                    class="text-xl font-bold group-hover:text-purple-400 transition"
+                                >
+                                    Sauce Demo Automation Framework
+                                </h3>
+                                <span
+                                    class="text-xs font-semibold bg-emerald-500/10 text-emerald-400 px-2.5 py-1 rounded-full border border-emerald-500/20"
+                                    >Completed</span
+                                >
+                            </div>
+                            <p class="text-gray-400 text-sm mb-4">
+                                End-to-end UI test automation framework built
+                                with Selenium WebDriver and the Page Object
+                                Model pattern.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span
+                                    class="text-xs bg-slate-800 text-gray-300 px-2.5 py-1 rounded-md"
+                                    >Java</span
+                                >
+                                <span
+                                    class="text-xs bg-slate-800 text-gray-300 px-2.5 py-1 rounded-md"
+                                    >Selenium</span
+                                >
+                                <span
+                                    class="text-xs bg-slate-800 text-gray-300 px-2.5 py-1 rounded-md"
+                                    >JUnit</span
+                                >
+                                <span
+                                    class="text-xs bg-slate-800 text-gray-300 px-2.5 py-1 rounded-md"
+                                    >POM</span
+                                >
+                            </div>
+                        </div>
+                        <a
+                            href="https://github.com/Nagraggini/sauce-demo"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-purple-400 font-medium inline-flex items-center text-sm group-hover:underline"
+                            >View Repository →</a
+                        >
+                    </div>
 
-                <div class="flex flex-wrap justify-center gap-4">
-                    <span class="bg-slate-800 px-4 py-2 rounded-lg">Java</span>
-                    <span class="bg-slate-800 px-4 py-2 rounded-lg"
-                        >Spring Boot</span
+                    <!-- Automation Exercise -->
+                    <div
+                        class="bg-slate-900/60 backdrop-blur-sm border border-slate-800 p-6 rounded-2xl flex flex-col justify-between hover:border-purple-500/40 transition group"
                     >
-                    <span class="bg-slate-800 px-4 py-2 rounded-lg"
-                        >Spring Security</span
+                        <div>
+                            <div class="flex justify-between items-start mb-3">
+                                <h3
+                                    class="text-xl font-bold group-hover:text-purple-400 transition"
+                                >
+                                    Automation Exercise E2E Test Suite
+                                </h3>
+                                <span
+                                    class="text-xs font-semibold bg-amber-500/10 text-amber-400 px-2.5 py-1 rounded-full border border-amber-500/20"
+                                    >WIP</span
+                                >
+                            </div>
+                            <p class="text-gray-400 text-sm mb-4">
+                                Comprehensive UI and API test automation
+                                framework exploring cutting-edge verification
+                                practices.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span
+                                    class="text-xs bg-slate-800 text-gray-300 px-2.5 py-1 rounded-md"
+                                    >Java</span
+                                >
+                                <span
+                                    class="text-xs bg-slate-800 text-gray-300 px-2.5 py-1 rounded-md"
+                                    >Selenium</span
+                                >
+                                <span
+                                    class="text-xs bg-slate-800 text-gray-300 px-2.5 py-1 rounded-md"
+                                    >JUnit</span
+                                >
+                                <span
+                                    class="text-xs bg-slate-800 text-gray-300 px-2.5 py-1 rounded-md"
+                                    >RestAssured</span
+                                >
+                            </div>
+                        </div>
+                        <a
+                            href="https://github.com/Nagraggini/automation-exercise"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-purple-400 font-medium inline-flex items-center text-sm group-hover:underline"
+                            >View Repository →</a
+                        >
+                    </div>
+
+                    <!-- Animal Shelter -->
+                    <div
+                        class="bg-slate-900/60 backdrop-blur-sm border border-slate-800 p-6 rounded-2xl flex flex-col justify-between hover:border-purple-500/40 transition group"
                     >
-                    <span class="bg-slate-800 px-4 py-2 rounded-lg">JWT</span>
-                    <span class="bg-slate-800 px-4 py-2 rounded-lg"
-                        >PostgreSQL</span
+                        <div>
+                            <div class="flex justify-between items-start mb-3">
+                                <h3
+                                    class="text-xl font-bold group-hover:text-purple-400 transition"
+                                >
+                                    Animal Shelter Web Application
+                                </h3>
+                                <span
+                                    class="text-xs font-semibold bg-emerald-500/10 text-emerald-400 px-2.5 py-1 rounded-full border border-emerald-500/20"
+                                    >Live Demo</span
+                                >
+                            </div>
+                            <p class="text-gray-400 text-sm mb-4">
+                                Full-stack web application for managing animal
+                                shelter records with robust data layers and
+                                architectural patterns.
+                            </p>
+                            <p class="text-gray-400 text-sm mb-4">
+                                CRUD operations, Spring Security, PostgreSQL
+                                persistence, layered architecture, DTO mapping
+                                and REST endpoints.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span
+                                    class="text-xs bg-slate-800 text-gray-300 px-2.5 py-1 rounded-md"
+                                    >Spring Boot</span
+                                >
+                                <span
+                                    class="text-xs bg-slate-800 text-gray-300 px-2.5 py-1 rounded-md"
+                                    >PostgreSQL</span
+                                >
+                                <span
+                                    class="text-xs bg-slate-800 text-gray-300 px-2.5 py-1 rounded-md"
+                                    >JPA / Hibernate</span
+                                >
+                                <span
+                                    class="text-xs bg-slate-800 text-gray-300 px-2.5 py-1 rounded-md"
+                                    >REST API</span
+                                >
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <a
+                                href="https://animal-shelter-hro5.onrender.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="text-purple-400 font-medium inline-flex items-center text-sm group-hover:underline"
+                                >Launch Application →</a
+                            >
+
+                            <a
+                                href="https://github.com/Nagraggini/animal-shelter"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="text-purple-400 font-medium inline-flex items-center text-sm group-hover:underline"
+                            >
+                                Source Code →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Programming Handbook -->
+                    <div
+                        class="bg-slate-900/60 backdrop-blur-sm border border-slate-800 p-6 rounded-2xl flex flex-col justify-between hover:border-purple-500/40 transition group"
                     >
-                    <span class="bg-slate-800 px-4 py-2 rounded-lg"
-                        >REST API</span
-                    >
-                    <span class="bg-slate-800 px-4 py-2 rounded-lg"
-                        >Hibernate</span
-                    >
-                    <span class="bg-slate-800 px-4 py-2 rounded-lg">JPA</span>
-                    <span class="bg-slate-800 px-4 py-2 rounded-lg">HTML</span>
-                    <span class="bg-slate-800 px-4 py-2 rounded-lg">CSS</span>
-                    <span class="bg-slate-800 px-4 py-2 rounded-lg"
-                        >JavaScript</span
-                    >
+                        <div>
+                            <div class="flex justify-between items-start mb-3">
+                                <h3
+                                    class="text-xl font-bold group-hover:text-purple-400 transition"
+                                >
+                                    My Programming Handbook
+                                </h3>
+                                <span
+                                    class="text-xs font-semibold bg-emerald-500/10 text-emerald-400 px-2.5 py-1 rounded-full border border-emerald-500/20"
+                                    >Completed</span
+                                >
+                            </div>
+                            <p class="text-gray-400 text-sm mb-4">
+                                A practical and welcoming digital handbook to
+                                learn Java, strengthen programming fundamentals,
+                                and build better code (Hungarian).
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span
+                                    class="text-xs bg-slate-800 text-gray-300 px-2.5 py-1 rounded-md"
+                                    >mdBook</span
+                                >
+                                <span
+                                    class="text-xs bg-slate-800 text-gray-300 px-2.5 py-1 rounded-md"
+                                    >Markdown</span
+                                >
+                            </div>
+                        </div>
+                        <a
+                            href="https://nagraggini.github.io/my-awesome-book/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-purple-400 font-medium inline-flex items-center text-sm group-hover:underline"
+                            >Read Handbook (Language: Hungarian)→</a
+                        >
+                    </div>
                 </div>
             </section>
 
-            <!-- BACKEND PROJECTS -->
-
-            <section class="mb-20">
-                <h2 class="text-3xl font-bold mb-10">
-                    Backend & Full-Stack Projects
+            <!-- TECH STACK SECTION -->
+            <section id="tech-stack" class="scroll-mt-24 space-y-8">
+                <h2 class="text-3xl font-bold tracking-tight text-center">
+                    Tech Stack
                 </h2>
 
-                <h3 class="text-2xl font-bold mb-8">
-                    Ongoing Projects (Work in Progress)
-                </h3>
-
-                <div class="grid md:grid-cols-2 gap-8">
-                    <!-- Animal Shelter -->
-                    <a
-                        href="https://animal-shelter-hro5.onrender.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="block bg-slate-900 p-6 rounded-xl shadow-lg hover:shadow-purple-500/30 hover:scale-105 transition duration-300 cursor-pointer"
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div
+                        class="bg-slate-900/40 border border-slate-800 p-5 rounded-xl space-y-3"
                     >
-                        <h4 class="text-xl font-semibold mb-3 text-white">
-                            Animal Shelter Web Application
+                        <h4
+                            class="font-bold text-purple-400 border-b border-slate-800 pb-2"
+                        >
+                            Backend
                         </h4>
-
-                        <p class="text-gray-400 mb-4">
-                            A full-stack web application for managing animal
-                            shelter records.
+                        <p class="text-sm text-gray-400 leading-relaxed">
+                            Java • Spring Boot • Hibernate / JPA • REST API •
+                            Spring Security • JWT
                         </p>
-
-                        <p class="text-sm text-gray-500 mb-4">
-                            Java, Spring Boot, PostgreSQL, Spring Data JPA,
-                            Hibernate, REST API
-                        </p>
-
-                        <p class="text-purple-400 font-medium">Live Demo →</p>
-                    </a>
-
-                    <!-- Student Registry -->
-                    <a
-                        href="https://student-registry-app-2gv1.onrender.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="block bg-slate-900 p-6 rounded-xl shadow-lg hover:shadow-purple-500/30 hover:scale-105 transition duration-300 cursor-pointer"
+                    </div>
+                    <div
+                        class="bg-slate-900/40 border border-slate-800 p-5 rounded-xl space-y-3"
                     >
-                        <h4 class="text-xl font-semibold mb-3 text-white">
-                            Student Registry App
+                        <h4
+                            class="font-bold text-purple-400 border-b border-slate-800 pb-2"
+                        >
+                            Database
                         </h4>
-
-                        <p class="text-gray-400 mb-4">
-                            Application for managing and storing student data.
+                        <p class="text-sm text-gray-400 leading-relaxed">
+                            PostgreSQL • H2 • SQL
                         </p>
-
-                        <p class="text-sm text-gray-500 mb-4">
-                            Java, Spring Boot, PostgreSQL, Spring Data JPA,
-                            Hibernate, REST API
+                    </div>
+                    <div
+                        class="bg-slate-900/40 border border-slate-800 p-5 rounded-xl space-y-3"
+                    >
+                        <h4
+                            class="font-bold text-purple-400 border-b border-slate-800 pb-2"
+                        >
+                            Testing
+                        </h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">
+                            JUnit 5 • Mockito • Selenium WebDriver • Rest
+                            Assured
                         </p>
-
-                        <p class="text-purple-400 font-medium">Live Demo →</p>
-                    </a>
+                    </div>
+                    <div
+                        class="bg-slate-900/40 border border-slate-800 p-5 rounded-xl space-y-3"
+                    >
+                        <h4
+                            class="font-bold text-purple-400 border-b border-slate-800 pb-2"
+                        >
+                            DevOps & Tools
+                        </h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">
+                            Git • Docker • GitHub Actions • Maven • Linux •
+                            HTML/CSS/JS
+                        </p>
+                    </div>
                 </div>
             </section>
 
-            <!-- FRONTEND PROJECTS -->
+            <!-- FUTURE & ROADMAP -->
+            <section
+                class="grid md:grid-cols-2 gap-8 bg-slate-900/30 border border-slate-800/80 p-8 rounded-2xl backdrop-blur-sm"
+            >
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-purple-300">
+                        Currently Focused On
+                    </h3>
+                    <ul class="space-y-2 text-gray-300 text-sm md:text-base">
+                        <li class="flex items-center gap-2">
+                            <span
+                                class="w-1.5 h-1.5 rounded-full bg-purple-500"
+                            ></span>
+                            Backend development with Spring Boot
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span
+                                class="w-1.5 h-1.5 rounded-full bg-purple-500"
+                            ></span>
+                            REST API design & best practices
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span
+                                class="w-1.5 h-1.5 rounded-full bg-purple-500"
+                            ></span>
+                            Test automation (unit & integration testing)
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span
+                                class="w-1.5 h-1.5 rounded-full bg-purple-500"
+                            ></span>
+                            Building production-like projects
+                        </li>
+                    </ul>
+                    <p class="mt-6 text-sm text-gray-400 italic">
+                        I am actively looking for backend developer
+                        opportunities where I can contribute and grow.
+                    </p>
+                </div>
 
-            <section class="mb-20">
-                <h3 class="text-2xl font-bold mb-8">Completed Projects</h3>
-
-                <div class="grid md:grid-cols-3 gap-8">
-                    <a
-                        href="https://nagraggini.github.io/my-awesome-book/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="bg-slate-900 p-6 rounded-xl shadow-lg hover:shadow-purple-500/30 hover:scale-105 transition duration-300 cursor-pointer"
-                    >
-                        <h4 class="text-xl font-semibold mb-3">
-                            My Programming Handbook (Hungarian)
-                        </h4>
-
-                        <p class="text-gray-400">Built with mdBook</p>
-                        <p class="text-purple-400">Live Demo →</p>
-                    </a>
-
-                    <!-- TODO  https://springboot-for-beginners.onrender.com -->
-                    <a
-                        href="Frontend_projects/src/Html+css+javascript_projects/1-Calculator/Main_Calculator.html"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="bg-slate-900 p-6 rounded-xl shadow-lg hover:shadow-purple-500/30 hover:scale-105 transition duration-300 cursor-pointer"
-                    >
-                        <h4 class="text-xl font-semibold mb-3">Calculator</h4>
-
-                        <p class="text-gray-400">
-                            Built with HTML, CSS, and JavaScript
-                        </p>
-                        <p class="text-purple-400">Live Demo →</p>
-                    </a>
-
-                    <a
-                        href="Frontend_projects/src/Html+css+javascript_projects/2-Quiz_App/Main_Quiz_App.html"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="bg-slate-900 p-6 rounded-xl shadow-lg hover:shadow-purple-500/30 hover:scale-105 transition duration-300 cursor-pointer"
-                    >
-                        <h4 class="text-xl font-semibold mb-3">
-                            Quiz Application
-                        </h4>
-
-                        <p class="text-gray-400">
-                            Built with HTML, CSS, and JavaScript
-                        </p>
-                        <p class="text-purple-400">Live Demo →</p>
-                    </a>
-
-                    <a
-                        href="Frontend_projects/src/Html+css+javascript_projects/3-RockPaperScissors-Game/Main_Stone_game.html"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="bg-slate-900 p-6 rounded-xl shadow-lg hover:shadow-purple-500/30 hover:scale-105 transition duration-300 cursor-pointer"
-                    >
-                        <h4 class="text-xl font-semibold mb-3">
-                            Rock Paper Scissors Game
-                        </h4>
-
-                        <p class="text-gray-400">
-                            Built with HTML, CSS, and JavaScript
-                        </p>
-                        <p class="text-purple-400">Live Demo →</p>
-                    </a>
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Planned Projects</h3>
+                    <ul class="space-y-3 text-xs md:text-sm text-gray-400">
+                        <li>
+                            <strong class="text-gray-200"
+                                >Get Things Done</strong
+                            >
+                            <span class="text-gray-500">(get-things-done)</span>
+                            – Simple task manager API.
+                        </li>
+                        <li>
+                            <strong class="text-gray-200"
+                                >Spring Boot Login & Reg</strong
+                            >
+                            <span class="text-gray-500">(login-system)</span> –
+                            Secure user registration.
+                        </li>
+                        <li>
+                            <strong class="text-gray-200"
+                                >Spring Boot JWT Auth</strong
+                            >
+                            <span class="text-gray-500">(jwt-auth)</span> –
+                            Authentication REST API.
+                        </li>
+                        <li>
+                            <strong class="text-gray-200"
+                                >Chat Application</strong
+                            >
+                            <span class="text-gray-500">(chat-app)</span> –
+                            Real-time messaging application.
+                        </li>
+                        <li>
+                            <strong class="text-gray-200"
+                                >Inventory Management</strong
+                            >
+                            <span class="text-gray-500">(inventory-sys)</span> –
+                            Product and stock manager.
+                        </li>
+                    </ul>
                 </div>
             </section>
+        </main>
 
-            <!-- PLANNED PROJECTS -->
-
-            <section class="mb-20">
-                <h3 class="text-2xl font-bold mb-6">Planned Projects</h3>
-
-                <ul class="grid md:grid-cols-2 gap-4 text-gray-300">
-                    <li>
-                        <span class="font-semibold text-white"
-                            >Get Things Done</span
-                        >
-                        <span class="text-gray-400 text-sm"
-                            >(get-things-done)</span
-                        >
-                        – Simple task manager API for creating and managing
-                        tasks.
-                    </li>
-                    <li>
-                        <span class="font-semibold text-white"
-                            >Spring Boot Login and Registration</span
-                        >
-                        <span class="text-gray-400 text-sm"
-                            >(spring-boot-login-and-registration)</span
-                        >
-                        – User login and registration system using Spring Boot.
-                    </li>
-                    <li>
-                        <span class="font-semibold text-white"
-                            >Spring Boot JWT Auth</span
-                        >
-                        <span class="text-gray-400 text-sm"
-                            >(spring-boot-jwt-auth)</span
-                        >
-                        – Authentication REST API using Spring Boot, JWT, and
-                        Spring Security.
-                    </li>
-                    <li>
-                        <span class="font-semibold text-white"
-                            >Chat Application</span
-                        >
-                        <span class="text-gray-400 text-sm"
-                            >(chat-application)</span
-                        >
-                        – Real-time messaging application.
-                    </li>
-
-                    <li>
-                        <span class="font-semibold text-white"
-                            >Inventory Management System</span
-                        >
-                        <span class="text-gray-400 text-sm"
-                            >(inventory-management-system)</span
-                        >
-                        – Product and stock management system.
-                    </li>
-                </ul>
-            </section>
-
-            <section>
-                <div class="mt-8 text-gray-400">
-                    <p class="mb-2">The project idea list is available here:</p>
-
-                    <a
-                        href="https://www.instagram.com/codehub_tech/p/C5zuPCMS8EN/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="text-purple-400 hover:text-purple-300 transition"
-                    >
-                        CodeHub Tech – Project ideas for web developer
-                    </a>
-                    <br />
-                    <a
-                        href="https://www.datacamp.com/blog/java-projects-for-all-levels"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="text-purple-400 hover:text-purple-300 transition"
-                    >
-                        DataCamp – Java Projects For All Levels
-                    </a>
-                    <br />
-                    <a
-                        href="https://www.geeksforgeeks.org/blogs/java-projects/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="text-purple-400 hover:text-purple-300 transition"
-                    >
-                        GeeksforGeeks – Java Project Ideas
-                    </a>
+        <!-- UNIVERZÁLIS FOOTER -->
+        <footer class="bg-slate-950 border-t border-slate-900 py-12 mt-24">
+            <div
+                class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-gray-400"
+            >
+                <div class="space-y-1 text-center md:text-left">
+                    <p class="font-semibold text-gray-200">Andrea Freud</p>
+                    <p>Junior Java Backend Developer</p>
                 </div>
-            </section>
 
-            <!-- CONTACT -->
-
-            <footer class="border-t border-slate-800 pt-10 text-center">
-                <h2 class="text-2xl font-semibold mb-4">Contact</h2>
-
-                <p class="text-gray-400">
-                    GitHub:
+                <div class="flex flex-wrap justify-center gap-6">
                     <a
                         href="https://github.com/Nagraggini"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-purple-400 hover:text-purple-300 transition"
+                        class="hover:text-purple-400 transition flex items-center gap-1"
                     >
-                        github.com/Nagraggini
+                        GitHub Profile
                     </a>
-                </p>
-                <br />
-                <p class="text-gray-400">
+                    <a
+                        href="https://www.linkedin.com/in/andrea-f-5a780974/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hover:text-purple-400 transition flex items-center gap-1"
+                    >
+                        LinkedIn Profile
+                    </a>
+
+                    <a
+                        href="mailto:freudandrea0520@gmail.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hover:text-purple-400 transition flex items-center gap-1"
+                    >
+                        Contact Me
+                    </a>
                     <a
                         href="https://github.com/nagraggini/Project-showcase"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-purple-400 hover:text-purple-300 transition"
+                        class="hover:text-purple-400 transition"
                     >
-                        Source Code (Portfolio Website)
+                        Source Code
                     </a>
+                </div>
+
+                <p class="text-xs text-gray-600">
+                    &copy; 2026 Andrea Freud - All rights reserved.
                 </p>
-            </footer>
-        </div>
+            </div>
+        </footer>
     </body>
 </html>
