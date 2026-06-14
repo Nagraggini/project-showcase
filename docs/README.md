@@ -13,93 +13,54 @@ The projects become progressively more challenging, reflecting my continuous lea
 
 👉 [Project Showcase](https://nagraggini.github.io/project-showcase/)
 
----
-
-## Current Status & Plans
-
-### Completed Projects
-
-- Calculator – HTML, CSS, JavaScript  
-- Quiz App – HTML, CSS, JavaScript  
-- Rock, Paper, Scissors – HTML, CSS, JavaScript  
-
-### Projects in Progress
-
-- **Animal Shelter**  
-  Web application for managing animal adoptions and shelter data  
-  Tech: Java, Spring Boot, PostgreSQL, JPA/Hibernate, REST API, Tailwind CSS  
-
-- **Harry Potter Sorting Hat**  
-  Application for managing and storing student data  
-  Tech: Java, Spring Boot, PostgreSQL, JPA/Hibernate, REST API  
-
----
-
-## Tech Stack
-
-### Backend
-- Java (Core)
-- Spring Boot
-- Hibernate / JPA
-- REST API
-
-### Database
-- PostgreSQL
-- H2
-
-### DevOps / Tools
-- Docker
-- Git & GitHub
-- GitHub Actions (CI/CD)
-- Maven
-- Linux
-
-### Testing
-- JUnit 5
-- Mockito
-
----
+[View My CV](https://github.com/Nagraggini/Nagraggini/blob/main/Andrea_Freud_CV.pdf)
 
 ## ⭐ Featured Projects
 
+### 🔹 Sauce Demo Automation Framework
+- **Description:** End-to-end UI test automation framework built with Selenium WebDriver and the Page Object Model pattern.
+- **Tech:** Java, Selenium, JUnit, Page Object Model
+- **Status:** Completed → [Demo](https://github.com/Nagraggini/sauce-demo)
+  
+### 🔹 Automation Exercise E2E Test Suite
+- **Description:** Comprehensive UI and API test automation framework.
+- **Tech:** Java, Selenium, JUnit, Page Object Model, RestAssured
+- **Status:** Work in progress → [Demo](https://github.com/Nagraggini/automation-exercise)
+  
 ### 🔹 Animal Shelter Web Application
-- **Description:** Full-stack application for managing animal shelter records  
-- **Tech:** Java, Spring Boot, PostgreSQL, JPA, Hibernate, REST API  
-- **Status:** Live → https://animal-shelter-hro5.onrender.com/
+- **Description:** Full-stack web application for managing animal shelter records.  
+- **Tech:** Java, Spring Boot, PostgreSQL, Spring Data JPA, Hibernate, REST API  
+- **Status:** Completed / Live demo → [Demo](https://animal-shelter-hro5.onrender.com/)
 
----
+### 🔹 My Programming Handbook (Hungarian)
+- **Description:** A practical and welcoming place to learn Java, strengthen programming fundamentals, and build better code. 
+- **Tech:** mdBook
+- **Status:** Completed → [Demo](https://nagraggini.github.io/my-awesome-book/)
 
-### 🔹 Student Registry App
-- **Description:** Application for managing student data  
-- **Tech:** Java, Spring Boot, PostgreSQL, JPA, Hibernate, REST API  
-- **Status:** Work in Progress → https://student-registry-app-2gv1.onrender.com/
+## 📜 Github stats
 
----
+![GitHub Streak](https://streak-stats.demolab.com?user=Nagraggini&theme=tokyonight)
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=Nagraggini&show_icons=true&theme=tokyonight)
 
-### 🔹 My IT Book
-- **Description:** A comprehensive IT guide from beginner to advanced levels. 
-- **Tech:** mdBook, GitHub Actions, GitHub Pages 
-- **Status:** Live → https://nagraggini.github.io/my-awesome-book/
+## Tech Stack
 
----
+**Backend**
+Java • Spring Boot • Hibernate/JPA • REST API
 
-### 🔹 Planned Projects <!--TODO -->
-- **Get Things Done** (get-things-done) – Simple task manager API  
-- **Spring Boot Login and Registration** (spring-boot-login-and-registration) – User login and registration system  
-- **Spring Boot JWT Auth** (spring-boot-jwt-auth) – Authentication REST API with JWT and Spring Security  
-- **Chat Application** (chat-application) – Real-time messaging application  
-- **Inventory Management System** (inventory-management-system) – Product and stock management system
-- **Auction Platform with Payment Integration** (System for managing auctions, bids, and simulated bank transfer transactions)
+**Database**
+PostgreSQL • H2 • SQL
 
----
+**Testing**
+JUnit 5 • Mockito • Selenium WebDriver • Rest Assured
 
-## Folder Structure
+**DevOps & Tools**
+Git • Docker • GitHub Actions • Maven • Linux
 
-```plaintext
-project-showcase/
-│
-├─ frontend/
-├─ backend/
-├─ assets/
-├─ docs/
-├─ README.md
+## Currently Focused On
+
+- Backend development with Spring Boot
+- REST API design & best practices
+- Test automation (unit & integration testing)
+- Building production-like projects
+
+I am actively looking for backend developer opportunities where I can contribute and grow.
