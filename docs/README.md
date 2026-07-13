@@ -21,6 +21,11 @@ The projects become progressively more challenging, reflecting my continuous lea
 - **Description:** End-to-end UI test automation framework built with Selenium WebDriver and the Page Object Model pattern.
 - **Tech:** Java, Selenium, JUnit, Page Object Model
 - **Status:** Completed → [Demo](https://github.com/Nagraggini/sauce-demo)
+
+### 🔹 Petstore Swagger API Test Automation
+- **Description:** REST Assured-based Java API test automation framework for validating the Swagger Petstore REST API.
+- **Tech:** Java, RestAssured, JUnit, Maven, Page Object Model
+- **Status:** Completed → [Demo](https://github.com/Nagraggini/petstore)
   
 ### 🔹 Automation Exercise E2E Test Suite
 - **Description:** Comprehensive UI and API test automation framework.
@@ -63,4 +68,4 @@ Git • Docker • GitHub Actions • Maven • Linux
 - Test automation (unit & integration testing)
 - Building production-like projects
 
-I am actively looking for backend developer opportunities where I can contribute and grow.
+I am actively looking for backend developer opportunities where I can contribute and grow. [Let's connect on LinkedIn!"](https://www.linkedin.com/in/andrea-f-5a780974/)
