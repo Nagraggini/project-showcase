@@ -17,30 +17,35 @@ The projects become progressively more challenging, reflecting my continuous lea
 
 ## ⭐ Featured Projects
 
+### 🔹 Petstore Swagger API Test Automation
+- **Description:** REST Assured-based Java API test automation framework for validating the Swagger Petstore REST API.
+- **Tech:** Java, RestAssured, JUnit, Maven
+- → [Repository](https://github.com/Nagraggini/petstore)
+
+### 🔹 Reqres API Test Automation
+- **Description:** REST Assured-based Java API test automation framework for validating the Reqres REST API.
+- **Tech:** Java, RestAssured, JUnit, Maven
+- → [Repository](https://github.com/Nagraggini/reqres)
+
 ### 🔹 Sauce Demo Automation Framework
 - **Description:** End-to-end UI test automation framework built with Selenium WebDriver and the Page Object Model pattern.
 - **Tech:** Java, Selenium, JUnit, Page Object Model
-- **Status:** Completed → [Demo](https://github.com/Nagraggini/sauce-demo)
+- → [Repository](https://github.com/Nagraggini/sauce-demo)
 
-### 🔹 Petstore Swagger API Test Automation
-- **Description:** REST Assured-based Java API test automation framework for validating the Swagger Petstore REST API.
-- **Tech:** Java, RestAssured, JUnit, Maven, Page Object Model
-- **Status:** Completed → [Demo](https://github.com/Nagraggini/petstore)
-  
 ### 🔹 Automation Exercise E2E Test Suite
 - **Description:** Comprehensive UI and API test automation framework.
 - **Tech:** Java, Selenium, JUnit, Page Object Model, RestAssured
-- **Status:** Work in progress → [Demo](https://github.com/Nagraggini/automation-exercise)
+- → [Repository](https://github.com/Nagraggini/automation-exercise)
   
 ### 🔹 Animal Shelter Web Application
 - **Description:** Full-stack web application for managing animal shelter records.  
 - **Tech:** Java, Spring Boot, PostgreSQL, Spring Data JPA, Hibernate, REST API  
-- **Status:** Completed / Live demo → [Demo](https://animal-shelter-hro5.onrender.com/)
+- → [Repository](https://github.com/Nagraggini/animal-shelter)
 
 ### 🔹 My Programming Handbook (Hungarian)
 - **Description:** A practical and welcoming place to learn Java, strengthen programming fundamentals, and build better code. 
 - **Tech:** mdBook
-- **Status:** Completed → [Demo](https://nagraggini.github.io/my-awesome-book/)
+- → [Live demo](https://nagraggini.github.io/my-awesome-book/)
 
 ## 📜 Github stats
 
